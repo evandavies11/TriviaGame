@@ -1,9 +1,22 @@
 body {
     background-color: coral;
-    display: flex;
-    justify-content: space-around;
+    float:center;
+}
+
+#header {
+    font-family: 'Poller One', cursive;
+    font-size: 30px;
 }
 
 .quizGame {
     text-align: center;
+}
+
+#quiz {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#afterSubmit {
+    visibility: hidden;
 }

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Poller+One&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>STAR WARS IV TRIVIA</title>
 </head>
@@ -39,29 +40,40 @@
                 <input type="radio" id="mc" name="question3" value="C-3PO"> C-3PO;
 
                 <p>Who played Princess Leia ?</p>
-                <input type="radio" id="mc" name="question4" value="galactica"> Gillian Anderson;
-                <input type="radio" id="mc" name="question4" value="x-wing"> Carrie Fischer;
-                <input type="radio" id="mc" name="question4" value="millenium faclon"> Linda Hamilton;
-                <input type="radio" id="mc" name="question4" value="enterprise"> Sigourney Weaver;
+                <input type="radio" id="mc" name="question4" value="Gillian Anderson"> Gillian Anderson;
+                <input type="radio" id="mc" name="question4" value="Carrie Fischer"> Carrie Fischer;
+                <input type="radio" id="mc" name="question4" value="Linda Hamilton"> Linda Hamilton;
+                <input type="radio" id="mc" name="question4" value="Sigourney Weaver"> Sigourney Weaver;
 
                 <p>How many parsecs did Han Solo make the Kessel Run in?</p>
-                <input type="radio" id="mc" name="question2" value="8"> 8;
-                <input type="radio" id="mc" name="question2" value="25"> 25;
-                <input type="radio" id="mc" name="question2" value="12"> 12;
-                <input type="radio" id="mc" name="question2" value="67"> 67;
+                <input type="radio" id="mc" name="question5" value="8"> 8;
+                <input type="radio" id="mc" name="question5" value="25"> 25;
+                <input type="radio" id="mc" name="question5" value="12"> 12;
+                <input type="radio" id="mc" name="question5" value="67"> 67;
 
                 <p>Where do Luke and Obi-Wan meet Han and Chewie?</p>
-                <input type="radio" id="mc" name="question2" value="galactica"> Mos Eisley;
-                <input type="radio" id="mc" name="question2" value="x-wing"> Mos Def;
-                <input type="radio" id="mc" name="question2" value="millenium faclon"> Hoth;
-                <input type="radio" id="mc" name="question2" value="enterprise"> Naboo;
+                <input type="radio" id="mc" name="question6" value="Mos Eisley"> Mos Eisley;
+                <input type="radio" id="mc" name="question6" value="Mos Def"> Mos Def;
+                <input type="radio" id="mc" name="question6" value="Hoth"> Hoth;
+                <input type="radio" id="mc" name="question6" value="Naboo"> Naboo;
+
+                <br>
+                <input id="button" type="button" value="I'm finished" onclick="check();">
 
             </form>
         </div>
     </div>
 
+    <div id="afterSubmit">
 
-    <script src="app.js"></script>
+        <p id="message"></p>
+        <p id="numberCorrect"></p>
+        <img id="picture">
+    </div>
+
+
+
+    <script src="assets/javascript/app.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
