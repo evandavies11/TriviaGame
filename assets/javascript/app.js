@@ -20,7 +20,7 @@ function countDown(secs, elem) {
     }
 
     secs--;
-    var time = setTimeout('counDown (' + secs + ',' + elem + ')', 1000);
+    var time = setTimeout('countDown (' + secs + ',"' + elem + '")', 1000);
 
 }
 
