@@ -5,14 +5,24 @@
 //log losses
 //display wrong / correct answers
 
-window.onload = function () {
 
-    $("#stop").on("click", stop);
-    $("#reset").on("click", reset);
-    $("#start").on("click", start);
-};
 
 console.log("hello world")
+
+countDown(60, "timer")
+
+function countDown(secs, elem) {
+    var element = document.getElementById(elem);
+    element.innerHTML = "You Have " + secs + " Seconds Left !";
+    if (secs < 1) {
+        clearTimeout(time);
+        element.innerHTML = "afterSubmit";
+    }
+
+    secs--;
+    var time = setTimeout('counDown (' + secs + ',' + elem + ')', 1000);
+
+}
 
 function check() {
 
@@ -27,6 +37,7 @@ function check() {
     if (question1 == "death star") {
         correct++;
     }
+
 
     if (question2 == "millenium faclon") {
         correct++;
@@ -48,8 +59,8 @@ function check() {
         correct++;
     }
 
-    var messages = ["great job", "that's just okay", "you really need to do better"];
-    var pictures = ["/images/win.gif", "/images/not good.gif", "/images/lose.gif"]
+    var messages = ["You Earned That Lightsaber", "You Might Be A Jedi Someday", "Darth Vader Got You", "The Empire Has Won"];
+
 
     var range;
 
@@ -65,9 +76,12 @@ function check() {
         range = 0;
     }
 
+
+
     document.getElementById("afterSubmit").style.visibility = "visible";
 
     document.getElementById("message").innerHTML = messages[range];
     document.getElementById("numberCorrect").innerHTML = "You Got " + correct + " correct.";
-    document.getElementById("picture").src = pictures[range];
+    document.getElementById("numberIncorrect").innerHTML = "You Got " + incorrect + " incorrect.";
+
 }
